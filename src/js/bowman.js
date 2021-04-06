@@ -1,5 +1,4 @@
 import Character from './character';
-// const Character = require('./character');
 
 export default class Bowman extends Character {
   constructor(name) {

@@ -1,5 +1,5 @@
 import Character from './character';
-// const Character = require('./character');
+
 export default class Daemon extends Character {
   constructor(name) {
     super(name, 'Daemon');

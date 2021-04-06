@@ -1,5 +1,5 @@
 import Team from '../app';
-import Bowerman from '../bowman';
+import Bowman from '../bowman';
 import Daemon from '../daemon';
 import Undead from '../undead';
 import Character from '../character';
@@ -17,7 +17,7 @@ test('testing class Team', () => {
     },
   };
   const team = new Team();
-  const bowman = new Bowerman('Лучник');
+  const bowman = new Bowman('Лучник');
   const daemon = new Daemon('Демон');
   const undead = new Undead('Смертник');
   team.addAll(bowman, daemon, undead, bowman);
@@ -38,7 +38,7 @@ test('testing class Team', () => {
     },
   };
   const team = new Team();
-  const bowman = new Bowerman('Лучник');
+  const bowman = new Bowman('Лучник');
   const daemon = new Daemon('Демон');
   const undead = new Undead('Смертник');
   team.addAll(bowman, daemon, undead, bowman);
@@ -52,7 +52,7 @@ test('testing class Team', () => {
     done: true,
   };
   const team = new Team();
-  const bowman = new Bowerman('Лучник');
+  const bowman = new Bowman('Лучник');
   const daemon = new Daemon('Демон');
   const undead = new Undead('Смертник');
   team.addAll(bowman, daemon, undead, bowman);
@@ -74,7 +74,7 @@ test('testing class Team', () => {
 test('testing class Team', () => {
   expect(() => {
     const team = new Team();
-    const bowman = new Bowerman('Лучник');
+    const bowman = new Bowman('Лучник');
     team.add(bowman);
     team.add(bowman);
   }).toThrow();
@@ -108,7 +108,7 @@ test('testing class Team', () => {
     },
   ];
   const team = new Team();
-  const bowman = new Bowerman('Лучник');
+  const bowman = new Bowman('Лучник');
   const daemon = new Daemon('Демон');
   const undead = new Undead('Смертник');
   team.addAll(bowman, daemon, undead, bowman);
@@ -127,7 +127,7 @@ test('testing class Team', () => {
     },
   ];
   const team = new Team();
-  const bowman = new Bowerman('Лучник');
+  const bowman = new Bowman('Лучник');
   team.add(bowman);
   expect(team.toArray()).toEqual(expected);
 });
